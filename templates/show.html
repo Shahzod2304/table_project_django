@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+<table class="table table-striped">
+    <th>
+        <!-- <th>Id</th> -->
+        <th>FIO</th>
+        <th>kun1</th>
+        <th>kun2</th>
+        <th>kun3</th>
+        <th>kun4</th>
+        <th>kun5</th>
+        <th>Jami</th>   
+    </th>
+    {% for i in employee %}
+    <tr>
+        <td>{{ i.Id }}</td>
+        <td>{{ i.FIO }}</td>
+        <td>{{ i.kun1 }}</td>
+        <td>{{ i.kun2 }}</td>
+        <td>{{ i.kun3 }}</td>
+        <td>{{ i.kun4 }}</td>
+        <td>{{ i.kun5 }}</td>
+        <td>{{ i.jami }}</td>
+        <!-- <td>
+            <a href="edit/{{ i.id }}">Edit</a>
+        </td> -->
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock  %}

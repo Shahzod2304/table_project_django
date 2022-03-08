@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+<form method="POST" action="add">
+    {% csrf_token %}
+    <label>ID:</label>
+    <div>{{ form.Id }}</div>
+    
+    <label>FIO:</label>
+    <div>{{ form.FIO }}</div>
+    
+    <label>kun1:</label>
+    <div>{{ form.kun1 }}</div>
+    
+    <label>kun2:</label>
+    <div>{{ form.kun2 }}</div>
+    
+    <label>kun3:</label>
+    <div>{{ form.kun3 }}</div>
+    
+    <label>kun4:</label>
+    <div>{{ form.kun4 }}</div>
+    
+    <label>kun5:</label>
+    <div>{{ form.kun5 }}</div>
+    
+    <label>jami:</label>
+    <div>{{ form.jami }}</div>
+    <div>
+        <button style="margin-top: 20px; 
+        padding: 10px; padding-top: 10px;
+        border: 3px black solid; background-color: black; color: aliceblue;" type="submit">Add</button>
+    </div>
+</form>
+
+{% endblock %}
